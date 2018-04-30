@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/spyderlib/spyder.py", line 2331, in main
+    mainwindow = run_spyder(app, options, args)
+  File "/usr/lib/python3/dist-packages/spyderlib/spyder.py", line 2215, in run_spyder
+    main.setup()
+  File "/usr/lib/python3/dist-packages/spyderlib/spyder.py", line 775, in setup
+    self.register_shortcut(quit_action, "_", "Quit")
+  File "/usr/lib/python3/dist-packages/spyderlib/spyder.py", line 2036, in register_shortcut
+    self.apply_shortcuts()
+  File "/usr/lib/python3/dist-packages/spyderlib/spyder.py", line 2049, in apply_shortcuts
+    keyseq = QKeySequence( get_shortcut(context, name, default) )
+  File "/usr/lib/python3/dist-packages/spyderlib/guiconfig.py", line 90, in get_shortcut
+    return CONF.get('shortcuts', '%s/%s' % (context, name), default=default)
+  File "/usr/lib/python3/dist-packages/spyderlib/userconfig.py", line 375, in get
+    section = self.__check_section_option(section, option)
+  File "/usr/lib/python3/dist-packages/spyderlib/userconfig.py", line 349, in __check_section_option
+    elif not is_text_string(section):
+  File "/usr/lib/python3/dist-packages/spyderlib/py3compat.py", line 96, in is_text_string
+    def is_text_string(obj):
+KeyboardInterrupt
